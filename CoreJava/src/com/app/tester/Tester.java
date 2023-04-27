@@ -12,7 +12,8 @@ public class Tester {
 		Fruit [] basket = new Fruit[sc.nextInt()];
 		
 		System.out.println("1:add mango,2:add orange,3:add apple 4:display basket "
-				+ "5.display name of fruit  6.display all details");
+				+ "5.display name of fruit  6.display all details 7.mark stale  "
+				+ "8.mark sour fruits as stale /n  9.");
 		do {
 			System.out.println("enter your choice");
 			choice=sc.nextInt();
@@ -96,7 +97,7 @@ public class Tester {
 				System.out.println("enter the index");
 			     index=sc.nextInt();
 			     
-			     if(index>=0 && index<basket.length)
+			     if(index<basket.length)
 			     {
 			    	 basket[index].setFresh(false);
 			    	 
@@ -112,7 +113,7 @@ public class Tester {
 				{
 					if(f.taste().equals("sour"))
 					{
-						System.out.println("all sour fruit are stale");
+						f.setFresh(false);
 					}
 				}
 				
@@ -120,7 +121,7 @@ public class Tester {
 			case 9:
 				System.out.println("enter index");
 				int i=sc.nextInt();
-				if(i>=0 && i<basket.length)
+				if(i<basket.length)
 				{
 						
 				if(basket[i] instanceof Mango)

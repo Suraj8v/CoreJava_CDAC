@@ -20,7 +20,7 @@ public class Fruit {
 	
 	public String toString()
 	{
-		return "name :"+name+" weight: "+weight+" color "+color;
+		return "name :"+name+" weight: "+weight+" color "+color+"fresh : "+fresh;
 	}
 
 
