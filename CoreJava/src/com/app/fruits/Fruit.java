@@ -1,6 +1,6 @@
 package com.app.fruits;
 
-public class Fruit {
+public abstract class Fruit {
 	
 	private String name,color; private double weight; boolean fresh;
 	
@@ -13,10 +13,7 @@ public class Fruit {
 	}
 	
 	
-	public String taste()
-	{
-		return "no such taste";
-	}
+	public abstract String taste();
 	
 	public String toString()
 	{
